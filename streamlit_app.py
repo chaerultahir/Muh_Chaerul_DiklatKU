@@ -11,7 +11,7 @@ def main() :
   st.header('Halaman Streamlit Muh. Chaerul')
   
   st.write('Metrics')
-  st.metric(label="Temperature", value="70 °F", delta="-1.2 °F")
+  st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
   
   st.subheader('Menampilkan Tabel House')
   st.write('yang bersumber dari tabel house_clean.csv')
