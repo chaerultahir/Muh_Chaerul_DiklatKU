@@ -13,6 +13,9 @@ def main() :
   st.write('yang bersumber dari tabel house_clean.csv')
   st.markdown('# Data Tabel House')
   st.dataframe(house)
+
+  st.write('Metrics')
+  st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
   
 
 
