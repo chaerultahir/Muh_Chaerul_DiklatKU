@@ -1,9 +1,9 @@
 import streamlit as st 
 import pandas as pd
-import plotly.express as px 
-import matplotlib.pyplot as plt
+#import plotly.express as px 
+#import matplotlib.pyplot as plt
 import requests
-from st_aggrid import AgGrid
+#from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
@@ -23,11 +23,11 @@ def main() :
 
 
   #matplotlib chart 
-  fig,ax = plt.subplots()
-  plt.scatter(house['bedrooms'],house['price'])
-  st.pyplot(fig)
-  plotly_fig = px.scatter(house['bedrooms'],house['price'])
-  st.plotly_chart(plotly_fig)
+  #fig,ax = plt.subplots()
+  #plt.scatter(house['bedrooms'],house['price'])
+  #st.pyplot(fig)
+  #plotly_fig = px.scatter(house['bedrooms'],house['price'])
+  #st.plotly_chart(plotly_fig)
 
 
 
