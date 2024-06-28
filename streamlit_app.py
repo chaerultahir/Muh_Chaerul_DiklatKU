@@ -8,7 +8,7 @@ import pandas as pd
 house = pd.read_csv('house_clean.csv')
 
 def main() : 
-  st.header('Halaman Streamlit Muh. Chaerul)
+  st.header('Halaman Streamlit Muh. Chaerul')
   st.subheader('This is Subheader')
   st.markdown('# Data Tabel Housse')
   st.dataframe(house)
