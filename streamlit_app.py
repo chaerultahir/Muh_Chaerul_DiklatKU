@@ -53,9 +53,6 @@ def main() :
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
   
 
-
-
-  
   #sidebar 
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
@@ -81,6 +78,22 @@ def main() :
   #dengan with atau dengan assignment 
   expander = st.expander("Klik Untuk Detail ")
   expander.write('Anda Telah Membuka Detail')
+
+
+  
+
+  #sidebar 
+  with st.form("Data Diri"):
+    st.write("Inside the form")
+    slider_val = st.slider("Form slider")
+    checkbox_val = st.checkbox("Form checkbox")
+
+  # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+      st.write("slider", slider_val, "checkbox", checkbox_val)
+
+  st.write("Outside the form")
 
 
 
