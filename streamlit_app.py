@@ -2,7 +2,7 @@
 import streamlit as st 
 
 def main() : 
-  st.header('Assalamualaikum Wr. Wb.')
+  st.header('Halaman Streamlit Muh. Chaerul')
   st.subheader('Selamat datang pada Web Aplikasi kami....')
   st.markdown('# Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
