@@ -24,7 +24,7 @@ def main() :
   #matplotlib chart 
   st.subheader('Menampilkan Chart')
   fig,ax = plt.subplots()
-  plt.scatter(house['bedrooms'],house['price'])
+  plt.hist(house['bedrooms'],house['price'])
   st.pyplot(fig)
   plotly_fig = px.scatter(house['bedrooms'],house['price'])
   st.plotly_chart(plotly_fig)
@@ -48,7 +48,7 @@ def main() :
   st.write('Usia Anda',age_slider)
     
   #Input (Typing)
-  st.subheader('Menampilkan kalkulator Sederhana')
+  st.subheader('Menampilkan Input kalkulator Sederhana')
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
   
