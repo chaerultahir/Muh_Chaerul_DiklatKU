@@ -24,7 +24,7 @@ def main() :
   #matplotlib chart 
   st.subheader('Menampilkan Chart')
   fig,ax = plt.subplots()
-  plt.hist(house['bedrooms'],house['price'])
+  plt.scatter(house['bedrooms'],house['price'])
   st.pyplot(fig)
   plotly_fig = px.scatter(house['bedrooms'],house['price'])
   st.plotly_chart(plotly_fig)
