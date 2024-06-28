@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px 
 import matplotlib.pyplot as plt
 import requests
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
