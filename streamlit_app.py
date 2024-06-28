@@ -9,7 +9,8 @@ house = pd.read_csv('house_clean.csv')
 
 def main() : 
   st.header('Halaman Streamlit Muh. Chaerul')
-  st.subheader('Menampilkan Tabel House (yang bersumber dari tabel house_clean.csv')
+  st.subheader('Menampilkan Tabel House')
+  st.write('yang bersumber dari tabel house_clean.csv')
   st.markdown('# Data Tabel House')
   st.dataframe(house)
   
