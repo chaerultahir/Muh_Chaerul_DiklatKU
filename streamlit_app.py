@@ -23,6 +23,7 @@ def main() :
 
 
   #matplotlib chart 
+  st.subheader('Menampilkan Chart')
   fig,ax = plt.subplots()
   plt.scatter(house['bedrooms'],house['price'])
   st.pyplot(fig)
