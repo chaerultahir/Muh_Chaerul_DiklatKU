@@ -61,6 +61,7 @@ def main() :
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
     
   #columns :
+  st.subheader('Menampilkan gambar pada 3 kolom')
   col1, col2, col3 = st.columns(3)
 
   with col1:
