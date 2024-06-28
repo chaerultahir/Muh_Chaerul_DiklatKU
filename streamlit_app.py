@@ -74,15 +74,17 @@ def main() :
   with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
+  
+  
   #expander 
   #dengan with atau dengan assignment 
+  st.subheader('Menampilkan Expander')
   expander = st.expander("Klik Untuk Detail ")
   expander.write('Anda Telah Membuka Detail')
 
 
-  
-
   #sidebar 
+  st.subheader('Menampilkan sidebar')
   with st.form("Data Diri"):
     st.write("Inside the form")
     slider_val = st.slider("Form slider")
