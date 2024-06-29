@@ -10,9 +10,6 @@ house = pd.read_csv('house_clean.csv')
 
 def main() : 
   st.header('Halaman Streamlit Muh. Chaerul')
-
-
-
   
   # Menampilkan Metrics
   st.write('Metrics')
@@ -22,6 +19,26 @@ def main() :
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Halaman Web',options=['Data House','Deskripsi Data','Prediction'])
 
+   ###Tombol untuk memindahkan konten
+  if st.sidebar.button("Tampilkan di Mainbar"):
+     st.session_state['show_content'] = True
+  else:
+     st.session_state['show_content'] = False
+
+    #sidebar 
+  st.subheader('Menampilkan sidebar')
+  with st.form("Data Diri"):
+    st.write("Inside the form")
+    slider_val = st.slider("Form slider")
+    checkbox_val = st.checkbox("Form checkbox")
+
+  # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+      st.write("slider", slider_val, "checkbox", checkbox_val)
+  st.write("Outside the form")
+
+#-------------------------------------------------------------------------------------------------------------
   
   # Menampilkan Tabel
   st.subheader('Menampilkan Tabel House')
@@ -88,24 +105,7 @@ def main() :
   expander.write('Anda Telah Membuka Detail')
 
 
-  #sidebar 
-  st.subheader('Menampilkan sidebar')
-  with st.form("Data Diri"):
-    st.write("Inside the form")
-    slider_val = st.slider("Form slider")
-    checkbox_val = st.checkbox("Form checkbox")
 
-  # Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-      st.write("slider", slider_val, "checkbox", checkbox_val)
-  st.write("Outside the form")
-
- ###Tombol untuk memindahkan konten
-  if st.sidebar.button("Tampilkan di Mainbar"):
-     st.session_state['show_content'] = True
-  else:
-     st.session_state['show_content'] = False
 
   #Menampilkan hasil di mainbar
   st.title("Mainbar")
