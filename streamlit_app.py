@@ -86,21 +86,7 @@ def main() :
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
   
-    #sidebar 
-  st.subheader('Menampilkan sidebar')
-  with st.form("Data Diri"):
-    st.write("Inside the form")
-    slider_val = st.slider("Form slider")
-    checkbox_val = st.checkbox("Form checkbox")
 
-  # Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-      st.write("slider", slider_val, "checkbox", checkbox_val)
-  st.write("Outside the form")
-
-
-  
   #expander 
   #dengan with atau dengan assignment 
   st.subheader('Menampilkan Expander')
@@ -118,7 +104,21 @@ def main() :
   else:
      st.write("Tidak ada konten untuk ditampilkan.")
 
+    #sidebar 
+  st.subheader('Menampilkan sidebar')
+  with st.form("Data Diri"):
+    st.write("Inside the form")
+    slider_val = st.slider("Form slider")
+    checkbox_val = st.checkbox("Form checkbox")
 
+  # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+      st.write("slider", slider_val, "checkbox", checkbox_val)
+  st.write("Outside the form")
+
+
+  
   # Insert containers separated into tabs:
   tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
   tab1.write("this is tab 1")
