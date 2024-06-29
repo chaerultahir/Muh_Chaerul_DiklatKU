@@ -55,7 +55,7 @@ def main() :
 
   #sidebar 
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
-  sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
+  sidebar_radio_button = st.sidebar.radio('Halaman Web',options=['Data House','Deskripsi Data','Prediction'])
     
   #columns :
   st.subheader('Menampilkan gambar pada 3 kolom')
