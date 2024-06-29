@@ -10,10 +10,18 @@ house = pd.read_csv('house_clean.csv')
 
 def main() : 
   st.header('Halaman Streamlit Muh. Chaerul')
+
+
+
   
   # Menampilkan Metrics
   st.write('Metrics')
   st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+#-------------------------------------------------------------------------------------------------------------
+  #sidebar 
+  sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
+  sidebar_radio_button = st.sidebar.radio('Halaman Web',options=['Data House','Deskripsi Data','Prediction'])
+
   
   # Menampilkan Tabel
   st.subheader('Menampilkan Tabel House')
@@ -53,9 +61,6 @@ def main() :
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
   
 
-  #sidebar 
-  sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
-  sidebar_radio_button = st.sidebar.radio('Halaman Web',options=['Data House','Deskripsi Data','Prediction'])
     
   #columns :
   st.subheader('Menampilkan gambar pada 3 kolom')
