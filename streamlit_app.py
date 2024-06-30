@@ -32,6 +32,7 @@ st.markdown(
 )
 
 
+
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
 
