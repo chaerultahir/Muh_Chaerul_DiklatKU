@@ -62,7 +62,7 @@ def main() :
 #-------------------------------------------------------------------------------------------------------------
   #sidebar 
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
-  sidebar_radio_button = st.sidebar.radio('Halaman Web',options=['Data House','Deskripsi Data','Prediction'])
+  sidebar_radio_button = st.sidebar.radio('Aplikasi Prediksi Harga Rumah',options=['Data House','Deskripsi Data','Prediction'])
 
    ###Tombol untuk memindahkan konten
   if st.sidebar.button("Tampilkan di Mainbar"):
@@ -70,7 +70,8 @@ def main() :
   else:
      st.session_state['show_content'] = False
 
-
+# Pilihan halaman dengan tabs
+    tab = st.sidebar.radio("Pilih halaman:", ["Iris Data", "Visualisasi", "Prediction"])
 
 #-------------------------------------------------------------------------------------------------------------
   
@@ -174,6 +175,8 @@ def main() :
   # You can also use "with" notation:
   with tab1:
      st.radio("Select one:", [1, 2])
+
+
 
 
 
