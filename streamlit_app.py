@@ -10,10 +10,33 @@ house = pd.read_csv('house_clean.csv')
 
 def main() : 
   st.header('Selamat Datang di halaman Streamlit Muh. Chaerul')
+
+#-------------------------------------------------------------------------------------------------------------
   
-  # Menampilkan Metrics
+  # Menampilkan Metrics1
   st.write('Metrics')
   st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+
+  #columns :
+  st.subheader('Menampilkan gambar pada 3 kolom')
+  col1, col2, col3 = st.columns(3)
+
+# Menampilkan Metrics1
+  with col1:
+    st.write('Metrics1')
+    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+    
+# Menampilkan Metrics2
+  with col2:
+    st.write('Metrics2')
+    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+
+# Menampilkan Metrics2
+  with col3:
+    st.write('Metrics1')
+    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+
+  
 #-------------------------------------------------------------------------------------------------------------
   #sidebar 
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
@@ -85,6 +108,8 @@ def main() :
   with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
+
+
   
 
   #expander 
