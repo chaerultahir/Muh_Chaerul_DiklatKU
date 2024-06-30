@@ -22,7 +22,7 @@ def main() :
     
 # Menampilkan Metrics2
   with col2:
-    st.metric(label="Temperature", value="25 °C", delta="1.2 °C")
+    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
 
 # Menampilkan Metrics3
   with col3:
