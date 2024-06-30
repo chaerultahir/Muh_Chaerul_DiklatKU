@@ -39,9 +39,9 @@ def main() :
   st.header('Selamat Datang Streamlit Muh. Chaerul')
 
 #-------------------------------------------------------------------------------------------------------------
-  # 3 columns Metrics :
+  # 4 columns Metrics :
   st.subheader('Metrics Data')
-  col1, col2, col3 = st.columns(3)
+  col1, col2, col3, col4 = st.columns(4)
 
 # Menampilkan Metrics1
   with col1:
@@ -53,6 +53,10 @@ def main() :
 
 # Menampilkan Metrics3
   with col3:
+    st.metric(label="Selisih", value="30", delta="10 %")
+
+# Menampilkan Metrics4
+  with col4:
     st.metric(label="Selisih", value="30", delta="10 %")
   
 #-------------------------------------------------------------------------------------------------------------
