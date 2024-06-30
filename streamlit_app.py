@@ -71,7 +71,7 @@ def main() :
      st.session_state['show_content'] = False
 
 # Pilihan halaman dengan tabs
-    tab = st.sidebar.radio("Pilih halaman:", ["Iris Data", "Visualisasi", "Prediction"])
+  tab = st.sidebar.radio("Pilih halaman:", ["Iris Data", "Visualisasi", "Prediction"])
 
 #-------------------------------------------------------------------------------------------------------------
   
