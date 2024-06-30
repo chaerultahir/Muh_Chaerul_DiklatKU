@@ -188,8 +188,8 @@ def main() :
 
     # Load dataset Iris
     #iris = load_iris()
-    iris = pd.read.data('iris.data')
-    iris_data = pd.DataFrame(iris.data, columns=iris.feature_names)
+    iris = pd.read_csv('iris.csv')
+    iris_data = pd.DataFrame(iris, columns=iris.feature_names)
     iris_data['species'] = [iris.target_names[i] for i in iris.target]
 
     # Halaman untuk Show Data dengan filter
