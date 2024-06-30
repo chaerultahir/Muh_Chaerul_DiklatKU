@@ -12,12 +12,7 @@ def main() :
   st.header('Selamat Datang Streamlit Muh. Chaerul')
 
 #-------------------------------------------------------------------------------------------------------------
-  
-  # Menampilkan Metrics1
-  st.write('Metrics')
-  st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
-
-  #columns :
+  # 3 columns Metrics :
   st.subheader('Metrics Data')
   col1, col2, col3 = st.columns(3)
 
@@ -32,7 +27,6 @@ def main() :
 # Menampilkan Metrics3
   with col3:
     st.metric(label="Selisih", value="30", delta="10 %")
-
   
 #-------------------------------------------------------------------------------------------------------------
   #sidebar 
