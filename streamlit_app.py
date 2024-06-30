@@ -9,7 +9,7 @@ import requests
 house = pd.read_csv('house_clean.csv')
 
 def main() : 
-  st.header('Selamat Datang di halaman Streamlit Muh. Chaerul')
+  st.header('Selamat Datang Streamlit Muh. Chaerul')
 
 #-------------------------------------------------------------------------------------------------------------
   
@@ -18,23 +18,20 @@ def main() :
   st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
 
   #columns :
-  st.subheader('Menampilkan gambar pada 3 kolom')
+  st.subheader('Metrics Data')
   col1, col2, col3 = st.columns(3)
 
 # Menampilkan Metrics1
   with col1:
-    st.write('Metrics1')
-    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+    st.metric(label="Jumlah Data", value="124 °C", delta="12 %")
     
 # Menampilkan Metrics2
   with col2:
-    st.write('Metrics2')
-    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+    st.metric(label="Temperature", value="25 °C", delta="1.2 °C")
 
-# Menampilkan Metrics2
+# Menampilkan Metrics3
   with col3:
-    st.write('Metrics1')
-    st.metric(label="Temperature", value="25 °C", delta="-1.2 °C")
+    st.metric(label="Selisih", value="30", delta="10 %")
 
   
 #-------------------------------------------------------------------------------------------------------------
