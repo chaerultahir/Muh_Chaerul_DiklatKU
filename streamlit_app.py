@@ -18,7 +18,7 @@ def main() :
 
 # Menampilkan Metrics1
   with col1:
-    st.metric(label="Jumlah Data", value="124 °C", delta="12 %")
+    st.metric(label="Jumlah Data", value="124", delta="12 %")
     
 # Menampilkan Metrics2
   with col2:
