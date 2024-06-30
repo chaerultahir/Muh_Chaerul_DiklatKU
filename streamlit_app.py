@@ -72,8 +72,6 @@ def main() :
   else:
      st.session_state['show_content'] = False
 
-# Pilihan halaman dengan tabs
-  tab = st.sidebar.radio("Aplikasi Jenis bunga Iris:", ["Iris Data", "Visualisasi", "Prediction"])
 
 #-------------------------------------------------------------------------------------------------------------
   
@@ -197,11 +195,9 @@ def main() :
     iris_data = pd.DataFrame(iris.data, columns=iris.feature_names)
     iris_data['species'] = [iris.target_names[i] for i in iris.target]
 
+# Pilihan halaman dengan tabs
+  tab = st.sidebar.radio("Aplikasi Jenis bunga Iris:", ["Iris Data", "Visualisasi", "Prediction"])
 
-
-
-
-    
     # Halaman untuk Show Data dengan filter
     if tab == "Iris Data":
         st.header("Iris Dataset")
