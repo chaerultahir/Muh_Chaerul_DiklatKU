@@ -35,6 +35,7 @@ st.markdown(
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
+iris = pd.read_csv('iris.csv')
 
 def main() : 
   st.header('Selamat Datang Streamlit Muh. Chaerul')
@@ -188,7 +189,7 @@ def main() :
 
     # Load dataset Iris
     #iris = load_iris()
-    iris = pd.read_csv('iris.csv')
+    
     iris_data = pd.DataFrame(iris, columns=iris.feature_names)
     iris_data['species'] = [iris.target_names[i] for i in iris.target]
 
