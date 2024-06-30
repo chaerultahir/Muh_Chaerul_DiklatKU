@@ -191,8 +191,7 @@ if __name__ == '__main__' :
 
 def main() : 
     # Load dataset Iris
-    #iris = load_iris()
-    
+    iris = load_iris()
     iris_data = pd.DataFrame(iris, columns=iris.feature_names)
     iris_data['species'] = [iris.target_names[i] for i in iris.target]
 
